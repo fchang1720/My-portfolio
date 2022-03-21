@@ -9,23 +9,24 @@
     color: black;
 }
 .header h1 {
-    display: inline-block;
+
     font-size: 48px;
     background-color: aqua;
 }
 
 
-.header nav a{
-    display: flex;
-    justify-content: flex-end;
+.header nav {
+
     font-size: 20px;
-    padding: 10px;
+    padding: 5px;
+    
 
 }
 
+
 .header2{
-    display: flex;
-    justify-content: flex-end;
+
+    
     
     padding: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -33,34 +34,60 @@
 }
 
 .header2 h2{
-    float: right;
+ 
     font-size: 20px;
     padding: 10px;
     background-color: cadetblue;
-}
-
-
-
-
-.one {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    
 }
 
 .one h1{
 
     font-size: 48px;
 }
-
-.three{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.two .details{
+    
+    line-height: 30px;
 }
+
 .three .four {
 
-
     border: 2px solid black;
+    max-width: 50%;
 
+}
+.details figure{
+    border: 2px solid black;
+    max-width: 50%;
+}
+
+}
+@media screen and (max-width: 992px) {
+   header{
+       width: 75%;
+    }
+
+    .two{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+  
+
+@media screen and (max-width: 768px) {
+    header{
+        width: 75%;
+    }
+    .two{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+  
+
+@media screen and (max-width: 576px) {
+    .two{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
