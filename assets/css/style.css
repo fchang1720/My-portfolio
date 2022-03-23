@@ -6,7 +6,7 @@
 .header{
     padding: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: cornflowerblue;
+    background-image: linear-gradient(to bottom right,cornflowerblue, cyan);
     color: black;
 }
 .header h1 {
@@ -28,7 +28,7 @@
 .header2{
     padding: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: beige;
+    background-image: linear-gradient(to bottom right, beige, white);
     height: 200px;
 }
 
@@ -40,15 +40,29 @@
 }
 
 .one{
-    background-color: cornflowerblue;
+    background-image: linear-gradient(to bottom right, cornflowerblue, cyan);
 }
 .one h1{
     font-size: 48px;
     padding: 20px;
 }
 
+.five{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+ 
+}
 .info{
     
+    width: 60%;
+    padding: 20px;
+}
+.picture{
+    
+    padding: 20px;
+ 
+   
 }
 .details{
     display: flex;
@@ -95,31 +109,61 @@
 }
 .flex-row2 figure{
     border: 2px solid black;
-    width: 200px;
+    width: 40%;
     padding: 5px;
     background-color: gold;
 }
 
-/* @media screen and (min-width: 768px) {
-    .two {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  
-    .two:last-child {
-      flex-grow: 1;
-    }
-  }
-  
 
-@media screen and (min-width: 992px) {
-    header {
-      width: 75%;
+@media screen and (max-width: 992px) {
+    .header h1{
+        width: 50%;
     }
-  
-    .two {
-      flex: 0 0 33.333%;
-      max-width: 33.333%;
+
+    .flex-row2{
+    width: 50%;
     }
-  }
-     */
+    .flex-row2 figure{
+    width: 50%;
+    }
+}
+    
+@media screen and (max-width: 768px) {
+    .header h1{
+        width: 50%;
+    }
+    .flex-row{
+        width: 50%;
+    }
+    .flex-row figure{
+        width: 100%
+    }
+    .flex-row2{
+         width: 50%;
+    }
+    .flex-row2 figure{
+         width: 100%;
+    }
+}
+ 
+@media screen and (max-width: 576px) {
+    .header h1{
+        width: 50%;
+    }
+    .flex-row{
+        width: 50%;
+    }
+    .flex-row figure{
+        width: 100%
+    }
+    .flex-row2{
+        width: 50%;
+    }
+    .flex-row2 figure{
+        width: 100%;
+    }
+
+}
+
+ 
+
