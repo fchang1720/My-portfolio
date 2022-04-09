@@ -1,168 +1,98 @@
 * {
     box-sizing: border-box;
+}
 
+.jumbo {
+    background-image: linear-gradient(to bottom right, #008C76FF, #9ED9CCFF) ;
+    box-shadow: 10px 5px 5px #008C76FF;
+}
+.jumbo .banner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Acme', sans-serif;
+}
+
+.nav-text{
+    color: #008C76FF;
+    font-weight: bolder;
+}
+
+.about-text h2 {
+    color: #008C76FF;
+    font-size: 50px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Acme', sans-serif;
+    margin: 20px;
+    width: 100%;
+    border-radius: 10px 0 10px 0;
+}
+
+.about-contents {
+    background-image: linear-gradient(to bottom right, #008C76FF, #9ED9CCFF) ;
+    box-shadow: 10px 5px 5px #008C76FF;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+}
+.Work-text{
+    width: 30%;
+    justify-content: center;
 
 }
-.header{
-    padding: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: linear-gradient(to bottom right,cornflowerblue, cyan);
+
+.Work-text h2{
+    font-size: 50px;
+    color: #008C76FF;
+}
+
+.Work-content{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  
+}
+
+
+.Work-content .contents{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    box-shadow: 10px 5px 5px #008C76FF;
+    border-radius: 10px 0 10px 0;
+}
+.Work-content .contents:hover {
+    transform: scale(1.1);
+}
+
+.Work-content .contents .picture{
+    width: 100%;
+    height: 80%; 
+    object-fit: contain;
+}
+
+.Work-content .contents .link-btn{
+   background-color: #008C76FF;
+}
+
+.Work-content .contents .link-btn:hover{
+    background-color: #9ED9CCFF;
     color: black;
 }
-.header h1 {
-    font-size: 48px;
-    background-color: aqua;
-    padding: 10px;
-    width: 20%;
+
+.contact-text {
+    width: 100%;
 }
-
-
-.header nav {
-
-    font-size: 20px;
-    padding: 5px;
-}
-
-
-
-.header2{
-    padding: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: linear-gradient(to bottom right, beige, white);
-    height: 200px;
-}
-
-.header2 h2{
-    font-size: 20px;
-    padding: 10px;
-    background-color: cadetblue;
-    width: 200px;
-}
-
-.one{
-    background-image: linear-gradient(to bottom right, cornflowerblue, cyan);
-}
-.one h1{
-    font-size: 48px;
-    padding: 20px;
-}
-
-.five{
-    display: flex;
-    flex-direction: row;
-    padding: 40px;
- 
-}
-.info{
-    
-    width: 60%;
-    padding: 20px;
-}
-.picture{
-    
-    padding: 20px;
- 
-   
-}
-.details{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    line-height: 30px;
-    padding: 30px;
-
-}
-
-.flex-row{
-    border: 2px solid black;
-    width: 81%;
-    height: 200px;
-    padding: 20px;
-    margin: 10px;
-    background-color: blue ;
-
-}
-
-.flex-row:hover, .flex-row:active{
-    background-color: darkcyan;
-
-}
-.flex-row figure{
-    border: 2px solid black;
-    width: 200px;
-    padding: 5px;
-    background-color: darkorange;
-}
-
-.flex-row2{
-    border: 2px solid black;
-    width: 40%;
-    height: 120px;
-    padding: 20px;
-    margin: 10px;
-    background-color: blueviolet;
-}
-
-.flex-row2:hover, .flex-row:active{
-    background-color: darkturquoise;
-}
-.flex-row2 figure{
-    border: 2px solid black;
-    width: 40%;
-    padding: 5px;
-    background-color: gold;
-}
-
-
-@media screen and (max-width: 992px) {
-    .header h1{
-        width: 50%;
-    }
-
-    .flex-row2{
-    width: 50%;
-    }
-    .flex-row2 figure{
-    width: 50%;
-    }
-}
-    
-@media screen and (max-width: 768px) {
-    .header h1{
-        width: 50%;
-    }
-    .flex-row{
-        width: 50%;
-    }
-    .flex-row figure{
-        width: 100%
-    }
-    .flex-row2{
-         width: 50%;
-    }
-    .flex-row2 figure{
-         width: 100%;
-    }
-}
- 
-@media screen and (max-width: 576px) {
-    .header h1{
-        width: 50%;
-    }
-    .flex-row{
-        width: 50%;
-    }
-    .flex-row figure{
-        width: 100%
-    }
-    .flex-row2{
-        width: 50%;
-    }
-    .flex-row2 figure{
-        width: 100%;
-    }
-
+.contact-text h2{
+    font-size: 50px;
+    color: #008C76FF;
 }
 
  
